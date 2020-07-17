@@ -27,6 +27,7 @@
           placeholder="Chute um número de 0 a 100..."
           max="100"
           min="0"
+          onchange="handleClick()"
         />
 
         <div class="input-group-append">
@@ -36,7 +37,9 @@
       </div>
 
       <div id="success" class="alert alert-success">
-        Parabéns, voce acertou! 👏👏
+        <p>Parabéns, voce acertou! 👏👏</p>
+        <button onclick="handleResetGame()" class="btn btn-secondary"> Jogar Novamente </button>
+
       </div>
 
       <div id="greater" class="alert alert-warning">

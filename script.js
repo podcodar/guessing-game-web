@@ -1,5 +1,5 @@
 
-const guess = Math.round(Math.random() * 100)
+let guess = Math.round(Math.random() * 100)
 
 const lower = document.getElementById('lower')
 const success = document.getElementById('success')
@@ -24,4 +24,12 @@ function handleClick() {
     greater.style = "display: block;"
     success.style = "display: none;"
   }
+}
+
+const handleResetGame = () => {
+  guess = Math.round(Math.random() * 100)
+
+  lower.style = "display: none;"
+  greater.style = "display: none;"
+  success.style = "display: none;"
 }
